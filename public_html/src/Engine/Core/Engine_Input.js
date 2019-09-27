@@ -14,6 +14,7 @@ var gEngine = gEngine || { };
 gEngine.Input = (function () {
     // Key code constants
     var kKeys = {
+        Enter :13,
         // arrows
         Left: 37,
         Up: 38,
@@ -37,6 +38,7 @@ gEngine.Input = (function () {
 
         // Alphabets
         A : 65,
+        C:67,
         D : 68,
         E : 69,
         F : 70,
@@ -45,6 +47,8 @@ gEngine.Input = (function () {
         J : 74,
         K : 75,
         L : 76,
+        P:  80,
+        Q : 81,
         R : 82,
         S : 83,
         T : 84,

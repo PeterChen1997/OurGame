@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+/* global vec2, gEngine */
+
 function MiniView(){
     
     this.miniCamera=null; ``
@@ -13,14 +15,14 @@ gEngine.Core.inheritPrototype(MiniView, Scene);
 MiniView.prototype.unloadScene = function () {
     //gEngine.Fonts.unloadFont(this.fontofplayer);
     // Step B: starts the next level
-    var nextLevel = new GameOver();  // next level to be loaded
-    gEngine.Core.startScene(nextLevel);
+//    var nextLevel = new GameOver();  // next level to be loaded
+//    gEngine.Core.startScene(nextLevel);
 };
 
 MiniView.prototype.initialize=function(){
  this.miniCamera = new Camera(
         vec2.fromValues(0, 0),   // position of the camera
-        100,                       // width of camera
+        200,                       // width of camera
         [330, 359, 200, 120]           // viewport (orgX, orgY, width, height)
     );
     this.miniCamera.setBackgroundColor([1,1,1, 0.1]);
